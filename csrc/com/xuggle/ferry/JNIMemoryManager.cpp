@@ -176,7 +176,7 @@ VSJNI_MemoryManagerInit(JavaVM* aJVM)
       throw std::runtime_error(
           "could not find free(byte[]) method in com.xuggle.ferry.JNIMemoryAllocator");
   }
-  catch (std::exception e)
+  catch (std::exception & e)
   {
     // DON'T HAVE JAVA do memory management.
     sCachedJVM = 0;
