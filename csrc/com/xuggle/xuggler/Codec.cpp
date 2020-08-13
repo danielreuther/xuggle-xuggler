@@ -83,7 +83,7 @@ namespace com { namespace xuggle { namespace xuggler
   Codec *
   Codec :: findEncodingCodec(const ICodec::ID id)
   {
-    return Codec::findEncodingCodecByIntID((const int)id);
+    return Codec::findEncodingCodecByIntID((int)id);
   }
   Codec *
   Codec :: findEncodingCodecByIntID(const int id)
@@ -119,7 +119,7 @@ namespace com { namespace xuggle { namespace xuggler
   Codec *
   Codec :: findDecodingCodec(const ICodec::ID id)
   {
-    return Codec::findDecodingCodecByIntID((const int)id);
+    return Codec::findDecodingCodecByIntID((int)id);
   }
 
   Codec *
