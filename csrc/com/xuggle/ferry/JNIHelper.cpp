@@ -290,7 +290,7 @@ namespace com { namespace xuggle { namespace ferry {
         }
       }
     }
-    catch (std::exception e)
+    catch (std::exception & e)
     {
       std::cerr << "Got exception while checking for debugger: "
         << e.what()
