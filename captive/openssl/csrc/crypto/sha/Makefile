@@ -7,7 +7,7 @@ TOP=    ../..
 CC=     cc
 CPP=    $(CC) -E
 INCLUDES=
-CFLAG=-g
+CFLAG=-g -DTERMIOS
 MAKEFILE=       Makefile
 AR=             ar r
 
