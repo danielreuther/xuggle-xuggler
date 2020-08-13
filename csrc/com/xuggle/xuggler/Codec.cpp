@@ -155,7 +155,10 @@ namespace com { namespace xuggle { namespace xuggler
   bool
   Codec :: canDecode()
   {
-    return mCodec ? mCodec->decode : false;
+    if (mCodec)
+	    return mCodec->decode;
+    else 
+	    return false;
   }
 
   bool
