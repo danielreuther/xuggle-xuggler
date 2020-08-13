@@ -170,7 +170,7 @@ fi
 AS_COMPILER_FLAG(-Wall, LIBOIL_CFLAGS="$LIBOIL_CFLAGS -Wall")
 if test "x$LIBOIL_CVS" = "xyes"
 then
-  AS_COMPILER_FLAG(-Werror, LIBOIL_CFLAGS="$LIBOIL_CFLAGS -Werror")
+  AS_COMPILER_FLAG(-Wno-error, LIBOIL_CFLAGS="$LIBOIL_CFLAGS -Wno-error")
 fi
 if test x$HAVE_GCC_ASM = xyes -a x$HAVE_POWERPC = xyes ; then
   AS_COMPILER_FLAG(["-Wa,-maltivec"],

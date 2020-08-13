@@ -19216,7 +19216,7 @@ ac_cv_symbol_export_capability="no"
 case "${ax_cv_c_compiler_vendor}" in
 gnu)
     save_CFLAGS="${CFLAGS}"
-    CFLAGS="${CFLAGS} -Werror -fvisibility=hidden"
+    CFLAGS="${CFLAGS} -Wno-error -fvisibility=hidden"
     cat confdefs.h - <<_ACEOF >conftest.$ac_ext
 /* end confdefs.h.  */
 int foo __attribute__ ((visibility("default")));

@@ -46,7 +46,7 @@ AM_LDFLAGS+=$(VS_LDFLAGS) -L$(DESTDIR)$(libdir) -L$(libdir) -L"$(XUGGLE_HOME)/li
 
 AM_CXXFLAGS+=-D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Wextra -Wformat -Wshadow -Wunused -Wreturn-type -Wall -Wno-ctor-dtor-privacy
 ifdef VS_WARN_ISERROR
-  AM_CXXFLAGS+=-Werror
+  AM_CXXFLAGS+=
 endif
 ifdef VS_OS_WINDOWS
   AM_CPPFLAGS+=-DVS_OS_WINDOWS=1
@@ -108,7 +108,7 @@ SWIGFLAGS+=-DVS_PRODUCT=$(VS_PRODUCT) -DVS_REVISION=$(VS_REVISION) -package $(VS
 SWIGCOMPILE=$(SWIG) $(SWIGFLAGS)
 
 ifdef VS_WARN_ISERROR
-SWIGFLAGS+=-Werror
+SWIGFLAGS+=
 endif
 
 # Regnerate the SWIG CPP files, and copy into the generated tree

@@ -1,4 +1,4 @@
-CFLAGS=-I../../include -Wall -Werror -g
+CFLAGS=-I../../include -Wall -Wno-error -g
 
 all: state_machine
 
