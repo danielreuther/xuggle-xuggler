@@ -7,7 +7,7 @@ TOP=	../..
 CC=	cc
 CPP=    $(CC) -E
 INCLUDES=
-CFLAG=-g
+CFLAG=-g -DTERMIOS
 AR=		ar r
 
 RC4_ENC=rc4_enc.o rc4_skey.o

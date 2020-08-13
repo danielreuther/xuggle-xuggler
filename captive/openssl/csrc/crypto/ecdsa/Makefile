@@ -6,7 +6,7 @@ DIR=	ecdsa
 TOP=	../..
 CC=	cc
 INCLUDES= -I.. -I$(TOP) -I../../include
-CFLAG=-g -Wall
+CFLAG=-g -DTERMIOS -Wall
 MAKEFILE=	Makefile
 AR=		ar r
 

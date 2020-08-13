@@ -6,7 +6,7 @@ DIR=	rc2
 TOP=	../..
 CC=	cc
 INCLUDES=
-CFLAG=-g
+CFLAG=-g -DTERMIOS
 MAKEFILE=	Makefile
 AR=		ar r
 

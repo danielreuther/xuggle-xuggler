@@ -6,7 +6,7 @@ DIR=	x509
 TOP=	../..
 CC=	cc
 INCLUDES= -I.. -I$(TOP) -I../../include
-CFLAG=-g
+CFLAG=-g -DTERMIOS
 MAKEFILE=	Makefile
 AR=		ar r
 
