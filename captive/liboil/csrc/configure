@@ -17153,11 +17153,11 @@ echo "${ECHO_T}$flag_ok" >&6; }
 if test "x$LIBOIL_CVS" = "xyes"
 then
 
-  { echo "$as_me:$LINENO: checking to see if compiler understands -Werror" >&5
-echo $ECHO_N "checking to see if compiler understands -Werror... $ECHO_C" >&6; }
+  { echo "$as_me:$LINENO: checking to see if compiler understands -Wno-error" >&5
+echo $ECHO_N "checking to see if compiler understands -Wno-error... $ECHO_C" >&6; }
 
   save_CFLAGS="$CFLAGS"
-  CFLAGS="$CFLAGS -Werror"
+  CFLAGS="$CFLAGS -Wno-error"
 
   cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
@@ -17203,7 +17203,7 @@ rm -f core conftest.err conftest.$ac_objext conftest.$ac_ext
   CFLAGS="$save_CFLAGS"
 
   if test "X$flag_ok" = Xyes ; then
-    LIBOIL_CFLAGS="$LIBOIL_CFLAGS -Werror"
+    LIBOIL_CFLAGS="$LIBOIL_CFLAGS -Wno-error"
     true
   else
 

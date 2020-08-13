@@ -10,7 +10,7 @@ m4_define([VSM4_LIB_MINOR_VERSION], [5])
 AC_INIT([xuggle-ffmpeg],[VSM4_LIB_MAJOR_VERSION.VSM4_LIB_MINOR_VERSION],[info@xuggle.com])
 AC_PREREQ([2.63])
 AC_PREFIX_DEFAULT([${XUGGLE_HOME:-/usr/local}])
-AM_INIT_AUTOMAKE([-Wall -Werror no-dependencies nostdinc tar-pax 1.10.2 ])
+AM_INIT_AUTOMAKE([-Wall -Wno-error no-dependencies nostdinc tar-pax 1.10.2 ])
 AM_MAINTAINER_MODE
 AM_SILENT_RULES([yes])
 LT_INIT([disable-static disable-fast-install win32-dll])
