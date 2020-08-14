@@ -50,16 +50,16 @@ static struct ErrorMappingTable sErrorMappingTable[] = {
     { AVERROR(ENOSYS),      IError::ERROR_NOTSUPPORTED },
     { AVERROR(ENOENT),      IError::ERROR_NOENT },
     { AVERROR(EPIPE),       IError::ERROR_EOF },
-    { AVERROR_PATCHWELCOME, IError::ERROR_PATCHWELCOME },
+    { static_cast<int32_t>(AVERROR_PATCHWELCOME), IError::ERROR_PATCHWELCOME },
     { AVERROR(EAGAIN),      IError::ERROR_AGAIN },
     { AVERROR(ERANGE),      IError::ERROR_RANGE },
     { AVERROR(EINTR),       IError::ERROR_INTERRUPTED },
-    { AVERROR_EOF,          IError::ERROR_EOF },
-    { AVERROR_DECODER_NOT_FOUND, IError::ERROR_NOFMT },
-    { AVERROR_DEMUXER_NOT_FOUND, IError::ERROR_NOFMT },
-    { AVERROR_ENCODER_NOT_FOUND, IError::ERROR_NOFMT },
-    { AVERROR_MUXER_NOT_FOUND, IError::ERROR_NOFMT },
-    { AVERROR_OPTION_NOT_FOUND, IError::ERROR_NOFMT },
+    { static_cast<int32_t>(AVERROR_EOF),          IError::ERROR_EOF },
+    { static_cast<int32_t>(AVERROR_DECODER_NOT_FOUND), IError::ERROR_NOFMT },
+    { static_cast<int32_t>(AVERROR_DEMUXER_NOT_FOUND), IError::ERROR_NOFMT },
+    { static_cast<int32_t>(AVERROR_ENCODER_NOT_FOUND), IError::ERROR_NOFMT },
+    { static_cast<int32_t>(AVERROR_MUXER_NOT_FOUND), IError::ERROR_NOFMT },
+    { static_cast<int32_t>(AVERROR_OPTION_NOT_FOUND), IError::ERROR_NOFMT },
 };
 static int32_t sErrorMappingTableSize = sizeof(sErrorMappingTable)/sizeof(struct ErrorMappingTable);
 
